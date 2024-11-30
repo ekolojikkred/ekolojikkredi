@@ -1,12 +1,26 @@
 // Firebase Configuration
+
+};// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-    appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyD2hHzG57gPbIsmRa5U4o4eJIvnXMvKgKM",
+  authDomain: "ekolojik-kredi.firebaseapp.com",
+  projectId: "ekolojik-kredi",
+  storageBucket: "ekolojik-kredi.firebasestorage.app",
+  messagingSenderId: "17544780480",
+  appId: "1:17544780480:web:09d695360decc5bdd96b25",
+  measurementId: "G-P3F8TRBYG1"
 };
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
